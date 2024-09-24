@@ -1,0 +1,175 @@
+body {
+    background-image: url('images/background.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    color: #ffffff; /* Change text color to white for better contrast */
+    font-family: Arial, sans-serif; /* Use a consistent font */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(43, 45, 45, 0.8);
+    z-index: 10;
+}
+nav {
+    background-color: rgba(43, 45, 45, 1); /* Adjust the last value (opacity) for more/less opacity */
+    position: fixed; /* Keep it fixed at the top */
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px; /* Adjust padding as needed */
+    z-index: 1000; /* Ensure it stays above other elements */
+    transition: background-color 0.3s; /* Smooth transition for changes */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00bfff;
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1s;
+}
+
+#hero h1 {
+    font-size: 3em;
+}
+h1, h2, h3 {
+    color: #ffffff; /* Header text color */
+}
+
+.btn {
+    background: #00bfff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #0088cc;
+}
+
+section {
+    background-color: rgba(43, 45, 45, 0.7); /* Slightly opaque background for sections */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for sections */
+    margin: 20px 0; /* Spacing between sections */
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center; /* Center the project content */
+    margin: 20px 0; /* Spacing between projects */
+    border-radius: 5px;
+}
+.project-image {
+    width: 300px; /* Set a fixed width for the small image */
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: rounded corners */
+    margin: 10px 0; /* Spacing above and below the image */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(29, 31, 33, 0.9);
+}
+.carousel {
+    position: relative;
+    max-width: 600px; /* Adjust width as needed */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none; /* Hide all items by default */
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transitions */
+}
+
+.carousel-item.active {
+    display: block; /* Show active item */
+    opacity: 1; /* Fully visible */
+    transform: scale(1); /* Scale to normal size */
+}
+
+
+.carousel img {
+    width: 100%; /* Ensure it uses the full width of the container */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio while covering the area */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s; /* Optional: smooth scaling effect on hover */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel p {
+    color: #fff;
+}
+
+.cv-download {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #2b2d2d; /* Match your theme */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cv-download:hover {
+    background-color: #1a1c1c; /* Darker on hover */
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gregory Price - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#food">Foodie</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Gregory Price</h1>
+        <p>Engineer & AI Researcher</p>
+        <a href="cv.html" class="btn">My Resume</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I am passionate about artificial intelligence and engineering. I recently completed my Master's degree in Computer Science with a concentration in Applied AI. I am currently seeking AI research, Machine Learning, Data Science and Software Engineering opportunities. Similar to AI, my potential is limitless. I specialize in everything NLP and LLM related. I have a lot of experience with HuggingFace and applying AI to software engineering tasks.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Lost In Translation</h3>
+            <img src="images/words_dyslexia.webp" class="project-image">
+            <p>Dyslexia is a neurodivergence that impacts one’s ability to process and produce textual information. While previous research has identified unique patterns in the writings of people with dyslexia – such as letter swapping and homophone confusion – that deviant themselves from the text typically used in the training and evaluation of common Natural Language Processing (NLP) models such as machine translation (MT), it is unclear how commercial NLP services perform for users with dyslexia. My work for AImpower aims to discover the inequalities that exist in MT. When my research paper becomes publicly available I will link it here.</p>
+            <p>Through this project, I have gained a lot of experience using Cloud services such as AWS, GCP and Azure. I also refreshed my knowledge on statistical testing and data analysis.</p>
+            <p>For more information, please visit our <a href="https://github.com/aimpowered/NLPdisparity">GitHub repository</a>.</p>
+        </div>
+        <div class="project" class="project-image">
+            <h3>Observatory AI</h3>
+            <img src="images/observatory.png" class="project-image">
+            <p>"Observatory" is a data visualization tool that lets user explore their data on the internet. The problem is that there are tons of tools that help you visualize data, but it's very hard to get easy access to the data you're interested in. For example, if I'm a data analyst that wants to see my Spotify data, I'd have to make get requests using their API (something most data analysts aren't good at doing). Observatory will help them connect to various different APIs seamlessly, without having to worry about the technical side, all they have to do is log in, and we'll handle the rest.</p>
+            <p>For more information, please check out the repository <a href="https://github.com/Observatory-ai/ProjectInfo">here</a>.</p>
+        </div>
+        <div class="project" class="project-image">
+            <h3>uOttaHack</h3>
+            <img src="images/uottahack.png" class="project-image">
+            <p>For this hackathon, I create a website to check your eligibility to various government of Canada grants. I learned more webdevelopment basics with the focus on boostrap, html and CSS.</p>
+            <p>For more information, please check out the repository <a href="https://github.com/gpric024/CanadaGMe">here</a>.</p>
+        </div>
+    </section>
+
+    <section id="food">
+        <h2>3 Michelin star Pescatarian Chef</h2>
+        <p style="font-size:12px;"> *Almost*</p>
+        <div class="carousel">
+            <div class="carousel-item active">
+                <img src="food_images/ravioli.jpg" alt="Best ravioli you have ever seen">
+                <p>As I have Italian heritage, I have mastered the process of making dough. My pasta can take any form, and the taste is unmatched</p>
+            </div>
+            <div class="carousel-item">
+                <img src="food_images/fish.jpg" alt="Fish n' Chips">
+                <p>I am an expert in the Fish n' Chips domain. Wherever I go, I get the fish and chips and rate it. Maybe I will create a leaderboard. That is tofu on the left.</p>
+            </div>
+            <div class="carousel-item">
+                <img src="food_images/pizza.jpg" alt="Pizza BABYYYYY">
+                <p>Ever since I got access to a pizza oven, the quality of my live has increased exponentially. The pizza may look quite simple, but it is far from it. Some nice features here are homemade sourdough crust, the best mozzarella cheese, fresh produce straight from my garden. And don’t even get me started about the sauce.</p>
+            </div>
+            <div class="carousel-item">
+                <img src="food_images/french_onion.jpg" alt="SOUP???">
+                <p>When winter comes around, I dabble in the French culinary experience which is French Onion soup. It’s so good it’ll make you cry (made me cry for several hours while making it).</p>
+            </div>
+            <button class="carousel-button prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="carousel-button next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: [gpric024][at sign]gmail.com</p>
+        <p>**remove all brackets**</p>
+    </section>
+    
+    
+
+    <footer>
+        <p>&copy; 2024 Greg Price</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
