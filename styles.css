@@ -20,7 +20,7 @@ nav {
     position: fixed; /* Keep it fixed at the top */
     width: 100%;
     margin: 0;
-    padding: 10px 20px; /* Adjust padding as needed */
+    padding: 10px 10px 0px 10px; /* Adjust padding as needed */
     z-index: 1000; /* Ensure it stays above other elements */
     transition: background-color 0.3s; /* Smooth transition for changes */
 }
@@ -30,6 +30,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
+    padding-left: 0px;
 }
 
 nav a {
